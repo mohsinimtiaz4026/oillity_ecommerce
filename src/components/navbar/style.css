@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --color-black: #292b2c;
+    --color-orange: #ff324d;
+}
+.main_navbar  img{
+    object-fit: cover;
+}
+.main_navbar .right_navbar ul{
+    display: flex;
+    list-style: none;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 10px;
+}
+.main_navbar .right_navbar ul li{
+    margin-right: 22px;
+    padding-top: 12px;
+
+}
+.main_navbar .right_navbar ul li:last-child{
+    margin-right: 10px;
+}
+.main_navbar .right_navbar ul li a{
+    text-decoration: none;
+    color: var(--color-black);
+    font-weight: 500;
+    text-transform: uppercase;
+    font-family: 'Poppins',sans-serif;
+}
+.main_navbar .right_navbar ul li:last-child a i{
+   font-size: 18px;
+}
+.main_navbar .right_navbar ul li:nth-child(7) a i{
+    font-size: 18px;
+ }
+ .main_navbar .right_navbar ul li a i{
+    padding-left: 8px;
+}
+.main_navbar .right_navbar ul li:hover a{
+    color: var(--color-orange);
+    transition: 0.3s;
+}
+.hoverEffects{
+    font-family: 'Poppins',sans-serif;
+}
+.hoverEffects:hover{
+    transition: 0.3s;
+    color: var(--color-orange);
+}

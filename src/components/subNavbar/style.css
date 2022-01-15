@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --color-black: #292b2c;
+    --color-orange: #ff324d;
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.sub_navbar{
+    font-family: 'Poppins',sans-serif;
+}
+.sub_navbar .left_section{
+    display: flex !important;
+    align-items: center;
+    justify-content: flex-start;
+}
+.sub_navbar .right_section{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    font-family: 'Poppins',sans-serif;
+    padding-top: 9px;
+    margin-top: 8px;
+}
+.sub_navbar .right_section p{
+    margin-right: 12px;
+    color: var(--color-black);
+}
+.sub_navbar .right_section p a{
+    color: var(--color-black);
+    text-decoration: none;
+    text-transform: capitalize;
+}
+.sub_navbar .right_section p:hover a{
+    color: var(--color-orange);
+    transition: 0.3s;
+}
+.sub_navbar .right_section p:hover i{
+    color: var(--color-orange);
+    transition: 0.3s;
+}
+.sub_navbar .right_section p i{
+    margin-right: 5px;
+}
+.sub_navbar .left_seciton select{
+    padding: 10px 10px;
+    border: 1px solid rgba(0, 0, 0, 0);
+    cursor: pointer;
+}
