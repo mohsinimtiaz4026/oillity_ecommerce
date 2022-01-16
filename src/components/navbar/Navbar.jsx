@@ -1,5 +1,5 @@
 import React from "react";
-import { Card, Row, Col, Menu, Dropdown } from "antd";
+import { Card, Row, Col, Menu, Dropdown, Divider } from "antd";
 import logo from "../../assets/images/logo_dark.png";
 import "./style.css";
 
@@ -25,6 +25,23 @@ const Navbar = () => {
             </Menu>
         );
     }
+
+    const ShopMenu = () => {
+        return (
+            <div className="container">
+                <Row>
+                    <Col>
+                        <Menu>
+                            <div className="Shop_rapper">
+
+                            </div>
+                        </Menu>
+                    </Col>
+                </Row>
+            </div>
+        );
+    }
+
     const PagesMenu = () => {
         return (
             <Menu style={{ width: '200px', fontFamily: 'Poppins', textTransform: 'capitalize' }}>
@@ -79,7 +96,7 @@ const Navbar = () => {
     return (
         <>
             <header className="main_navbar">
-                <Card size="small">
+                <Card size="small" style={{ borderBottom: '0' }}>
                     <div className="container">
                         <Row>
                             <Col span={8}>
@@ -93,7 +110,11 @@ const Navbar = () => {
                                                 <a href="#">Home <i className="bi bi-chevron-down"></i></a>
                                             </li>
                                         </Dropdown>
-                                        <li><a href="#">Shop <i className="bi bi-chevron-down"></i></a></li>
+                                        <Dropdown overlay={ShopMenu} placement="bottomCenter">
+                                            <li>
+                                                <a href="#">Shop <i className="bi bi-chevron-down"></i></a>
+                                            </li>
+                                        </Dropdown>
                                         <li><a href="#">Products <i className="bi bi-chevron-down"></i></a></li>
                                         <Dropdown overlay={PagesMenu}>
                                             <li>
