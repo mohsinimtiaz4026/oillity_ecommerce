@@ -32,9 +32,7 @@ const Navbar = () => {
                 <Row>
                     <Col>
                         <Menu>
-                            <div className="Shop_rapper">
-
-                            </div>
+                           
                         </Menu>
                     </Col>
                 </Row>

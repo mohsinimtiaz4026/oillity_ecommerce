@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --color-black: #292b2c;
+    --color-orange: #ff324d;
+}
+.saleOption{
+    margin-top: 120px;
+    padding-bottom: 40px;
+}
+.saleOption .left_section{
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+.left_section .left_section_info{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: 50%;
+    transform: translateY(-50%);
+    padding: 20px;
+}
+.left_section_info h2{
+    font-family: 'Roboto',sans-serif;
+    font-size: 22px;
+    text-transform: capitalize;
+    color: var(--color-black);
+}
+.left_section_info p{
+    font-family: 'Roboto',sans-serif;
+    font-size: 28px;
+    font-weight: bold;
+    text-transform: capitalize;
+    color: var(--color-black);
+}
+.left_section_info a{
+    font-family: 'Poppins',sans-serif;
+    text-transform: capitalize;
+    text-decoration: none;
+    color: var(--color-black);
+    transition: .4s;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6) !important;
+    padding: 10px;
+}
+.left_section_info a:hover{
+    color: var(--color-orange);
+}
+.saleOption .right_section{
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+.right_section .right_section_info{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: 50%;
+    transform: translateY(-50%);
+    padding: 20px;
+}
+.right_section_info h2{
+    font-family: 'Roboto',sans-serif;
+    font-size: 22px;
+    text-transform: capitalize;
+    color: var(--color-black);
+}
+.right_section_info p{
+    font-family: 'Roboto',sans-serif;
+    font-size: 28px;
+    font-weight: bold;
+    text-transform: capitalize;
+    color: var(--color-black);
+}
+.right_section_info a{
+    font-family: 'Poppins',sans-serif;
+    text-transform: capitalize;
+    text-decoration: none;
+    color: var(--color-black);
+    transition: .4s;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6) !important;
+    padding: 10px;
+}
+.right_section_info a:hover{
+    color: var(--color-orange);
+}
