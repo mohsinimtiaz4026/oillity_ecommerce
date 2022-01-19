@@ -11,6 +11,8 @@ import Marketing_Banner from './components/marketingBanner/Marketing_Banner';
 import FeaturedProducts from './components/featuredProducts/Featured_Products';
 import Testimonails from './components/Testimonails/Testimonails';
 import Service from './components/Services/Service';
+import Subscription from './components/Subscription/Subscription';
+import Footer from './components/Footer/Footer';
 
 function App() {
   return (
@@ -24,6 +26,8 @@ function App() {
       <FeaturedProducts />
       <Testimonails />
       <Service />
+      <Subscription />
+      <Footer />
     </>
   );
 }
