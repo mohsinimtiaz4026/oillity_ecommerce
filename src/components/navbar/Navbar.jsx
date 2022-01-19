@@ -1,6 +1,7 @@
 import React from "react";
-import { Card, Row, Col, Menu, Dropdown, Divider } from "antd";
+import { Card, Row, Col, Menu, Dropdown } from "antd";
 import logo from "../../assets/images/logo_dark.png";
+import banner from "../../assets/images/shop_banner.jpg";
 import "./style.css";
 
 const Navbar = () => {
@@ -29,13 +30,130 @@ const Navbar = () => {
     const ShopMenu = () => {
         return (
             <div className="container">
-                <Row>
-                    <Col>
-                        <Menu>
-                           
+                <div className="row">
+                    <div className="col d-flex">
+                        <Menu style={{fontFamily: 'Poppins',width: '285px',textTransform: 'capitalize'}}>
+                        <h2 id="menu_topic1">Shop Menu Layout</h2>
+                            <Menu.Item className="hoverEffects">
+                                Fashion Home One
+                            </Menu.Item>
+                            <Menu.Item className="hoverEffects">
+                                Fashion Home Two
+                            </Menu.Item>
+                            <Menu.Item className="hoverEffects">
+                                Fashion Home Three
+                            </Menu.Item>
+                            <Menu.Item className="hoverEffects">
+                                Fashion Home Four
+                            </Menu.Item>
                         </Menu>
-                    </Col>
-                </Row>
+                        <Menu style={{fontFamily: 'Poppins',width: '285px',textTransform: 'capitalize'}}>
+                            <h2 id="menu_topic1">Other Pages</h2>
+                            <Menu.Item className="hoverEffects">
+                                Cart
+                            </Menu.Item>
+                            <Menu.Item className="hoverEffects">
+                                Checkout
+                            </Menu.Item>
+                            <Menu.Item className="hoverEffects">
+                                MyAccount
+                            </Menu.Item>
+                            <Menu.Item className="hoverEffects">
+                                Order Completed
+                            </Menu.Item>
+                        </Menu>
+                        <Menu style={{fontFamily: 'Poppins',width: '285px',textTransform: 'capitalize'}}>
+                            <h2 id="menu_topic1">Product Pages</h2>
+                            <Menu.Item className="hoverEffects">
+                                Default
+                            </Menu.Item>
+                            <Menu.Item className="hoverEffects">
+                                Left Sidebar
+                            </Menu.Item>
+                            <Menu.Item className="hoverEffects">
+                                Right Sidebar
+                            </Menu.Item>
+                            <Menu.Item className="hoverEffects">
+                                Thumb Left
+                            </Menu.Item>
+                        </Menu>
+                        <Menu style={{fontFamily: 'Poppins',width: '285px',textTransform: 'capitalize'}}>
+                            <div className="shop_now">
+                                <img src={banner} alt="banner" />
+                                <div className="shop_info">
+                                    <p>New Collection</p>
+                                    <h4>Sale 30% Off</h4>
+                                    <a href="#" className="shopBtn">Shop Now</a>
+                                </div>
+                            </div>
+                        </Menu>
+                    </div>
+                </div>
+            </div>
+        );
+    }
+    const ProductMenu = () => {
+        return (
+            <div className="container">
+                <div className="row">
+                    <div className="col d-flex">
+                        <Menu style={{fontFamily: 'Poppins',width: '285px',textTransform: 'capitalize'}}>
+                        <h2 id="menu_topic1">Shop Menu Layout</h2>
+                            <Menu.Item className="hoverEffects">
+                                Fashion Home One
+                            </Menu.Item>
+                            <Menu.Item className="hoverEffects">
+                                Fashion Home Two
+                            </Menu.Item>
+                            <Menu.Item className="hoverEffects">
+                                Fashion Home Three
+                            </Menu.Item>
+                            <Menu.Item className="hoverEffects">
+                                Fashion Home Four
+                            </Menu.Item>
+                        </Menu>
+                        <Menu style={{fontFamily: 'Poppins',width: '285px',textTransform: 'capitalize'}}>
+                            <h2 id="menu_topic1">Other Pages</h2>
+                            <Menu.Item className="hoverEffects">
+                                Cart
+                            </Menu.Item>
+                            <Menu.Item className="hoverEffects">
+                                Checkout
+                            </Menu.Item>
+                            <Menu.Item className="hoverEffects">
+                                MyAccount
+                            </Menu.Item>
+                            <Menu.Item className="hoverEffects">
+                                Order Completed
+                            </Menu.Item>
+                        </Menu>
+                        <Menu style={{fontFamily: 'Poppins',width: '285px',textTransform: 'capitalize'}}>
+                            <h2 id="menu_topic1">Product Pages</h2>
+                            <Menu.Item className="hoverEffects">
+                                Default
+                            </Menu.Item>
+                            <Menu.Item className="hoverEffects">
+                                Left Sidebar
+                            </Menu.Item>
+                            <Menu.Item className="hoverEffects">
+                                Right Sidebar
+                            </Menu.Item>
+                            <Menu.Item className="hoverEffects">
+                                Thumb Left
+                            </Menu.Item>
+                        </Menu>
+                        <Menu style={{fontFamily: 'Poppins',width: '285px',textTransform: 'capitalize'}}>
+                            <div className="shop_now">
+                                <img src={banner} alt="banner" />
+                                <div className="shop_info">
+                                    <p>New Collection</p>
+                                    <h4>Sale 30% Off</h4>
+                                    <a href="#" className="shopBtn">Shop Now</a>
+                                </div>
+                            </div>
+                        </Menu>
+                    </div>
+                </div>
             </div>
         );
     }
@@ -113,7 +231,11 @@ const Navbar = () => {
                                                 <a href="#">Shop <i className="bi bi-chevron-down"></i></a>
                                             </li>
                                         </Dropdown>
-                                        <li><a href="#">Products <i className="bi bi-chevron-down"></i></a></li>
+                                        <Dropdown overlay={ProductMenu} placement="bottomCenter">
+                                            <li>
+                                                <a href="#">Products <i className="bi bi-chevron-down"></i></a>
+                                            </li>
+                                        </Dropdown>
                                         <Dropdown overlay={PagesMenu}>
                                             <li>
                                                 <a href="#">Pages <i className="bi bi-chevron-down"></i></a>
