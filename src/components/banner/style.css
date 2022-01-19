@@ -300,13 +300,3 @@
     background: var(--color-orange);
     color: var(--color-white);
   }
-  .slick-arrow .slick-prev{
-    position: absolute;
-    z-index: 1;
-    width: 45px;
-    height: 45px;
-    left: 30px;
-    background: var(--color-white);
-    box-shadow: 0 2px 4px rgba(0, 0, 0,0.1);
-    color: black;
-  }

@@ -2,6 +2,11 @@ import React from 'react';
 import { Card,Rate } from 'antd';
 
 const ProductCard = (props) => {
+
+    const [LabelNew,setLabelNew] = React.useState(props.LabelNew);
+    const [LabelHot,setLabelHot] = React.useState(props.LabelHot);
+    const [LabelSale,setLabelSale] = React.useState(props.LabelSale);
+
     return (
         <>
                 <div className='col-3'>
@@ -11,9 +16,9 @@ const ProductCard = (props) => {
                     >
                         <div className='overlay'>
                             <div className='card_label'>
-                                <a className='bg-warning'>{props.LabelNew}</a>
-                                <a className='bg-danger'>{props.LabelHot}</a>
-                                <a className='bg-success'>{props.LabelSale}</a>
+                                {LabelNew ? <a className='bg-warning'>{props.LabelNew}</a> : ""}
+                                {LabelHot ? <a className='bg-danger'>{props.LabelHot}</a> : ""}
+                                {LabelSale ? <a className='bg-success'>{props.LabelSale}</a> : ""}
                             </div>
                             <div className='card_menu'>
                                 <ul>
