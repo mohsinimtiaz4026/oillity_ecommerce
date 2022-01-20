@@ -46,6 +46,9 @@
     color: var(--color-orange);
     transition: 0.3s;
 }
+.hoverEffects{
+    font-family: 'Poppins',sans-serif;
+}
 .hoverEffects:hover{
     transition: 0.3s;
     color: var(--color-orange) !important;

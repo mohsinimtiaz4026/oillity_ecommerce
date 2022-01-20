@@ -1,3 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --color-black: #292B2C;
+    --color-white: #fff;
+    --color-orange: #ff2c4d;
+    --color-green: #388E3C;
+    --color-grey: #687188;
+}
 .footer{
-    margin-bottom: 300px;
+    width: 100%;
+    height: 400px;
+    background-color: var(--color-black);
+}
+.footer .first_section{
+    padding-top: 100px;
+}
+.footer .first_section p{
+    padding-top: 20px;
+    color: var(--color-white);
+    font-family: 'Poppins',sans-serif;
+    font-size: 14px;
+}
+.first_section ul{
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+}
+.first_section ul li{
+    padding-top: 20px;
+}
+.first_section ul li:nth-child(2){
+    padding-left: 25px;
+}
+.first_section ul li:nth-child(3){
+    padding-left: 25px;
+}
+.first_section ul li:nth-child(4){
+    padding-left: 25px;
+}
+.first_section ul li:last-child{
+    padding-left: 25px;
+}
+.first_section ul li a{
+    text-decoration: none;
+    color: var(--color-white);
+}
+.first_section ul li a i{
+    color: var(--color-white);
+}
+.first_section ul li a:hover i{
+    color: var(--color-orange);
+    transition: .4s;
+}
+.footer .second_section{
+    padding-top: 100px;
+}
+.second_section h2{
+    font-family: 'Roboto',sans-serif;
+    color: var(--color-white);
+    font-weight: bold;
+    text-transform: capitalize;
+    font-size: 22px;
+    padding-left: 30px;
+}
+.footer .second_section ul li{
+    list-style: none;
+    padding-left: 0;
+    line-height: 35px;
+}
+.footer .second_section ul li a{
+    text-decoration: none;
+    color: var(--color-white);
+    font-family: 'Poppins',sans-serif;
+    font-weight: 300;
+    transition: .6s;
+    text-transform: capitalize;
+}
+.second_section ul li a:hover{
+    color: var(--color-orange);
+}
+.footer .third_section{
+    padding-top: 100px;
+}
+.third_section h2{
+    font-family: 'Roboto',sans-serif;
+    color: var(--color-white);
+    font-weight: bold;
+    text-transform: capitalize;
+    font-size: 22px;
+    padding-left: 30px;
+}
+.footer .third_section ul li{
+    list-style: none;
+    padding-left: 0;
+}
+.footer .third_section ul li:nth-child(1) a{
+    text-transform: capitalize;
+}
+.footer .third_section ul li:nth-child(1){
+   padding-top: 05px;
+}
+.footer .third_section ul li i{
+    padding-right: 10px;
+}
+.footer .third_section ul li a{
+    text-decoration: none;
+    color: var(--color-white);
+    font-family: 'Poppins',sans-serif;
+    font-weight: 300;
+    transition: .6s;
+    font-size: 14px;
+}
+.footer .third_section ul li a:hover{
+    color: var(--color-white);
+}
+.third_section ul li:nth-child(2) a:hover{
+    color: var(--color-orange);
+}
+.third_section ul li:nth-child(2){
+    line-height: 60px;
 }

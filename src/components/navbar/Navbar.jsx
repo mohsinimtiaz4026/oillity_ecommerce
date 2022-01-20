@@ -3,6 +3,7 @@ import { Card, Row, Col, Menu, Dropdown } from "antd";
 import logo from "../../assets/images/logo_dark.png";
 import banner from "../../assets/images/shop_banner.jpg";
 import "./style.css";
+import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
 
@@ -32,8 +33,8 @@ const Navbar = () => {
             <div className="container">
                 <div className="row">
                     <div className="col d-flex">
-                        <Menu style={{fontFamily: 'Poppins',width: '285px',textTransform: 'capitalize'}}>
-                        <h2 id="menu_topic1">Shop Menu Layout</h2>
+                        <Menu style={{ fontFamily: 'Poppins', width: '285px', textTransform: 'capitalize' }}>
+                            <h2 id="menu_topic1">Shop Menu Layout</h2>
                             <Menu.Item className="hoverEffects">
                                 Fashion Home One
                             </Menu.Item>
@@ -47,7 +48,7 @@ const Navbar = () => {
                                 Fashion Home Four
                             </Menu.Item>
                         </Menu>
-                        <Menu style={{fontFamily: 'Poppins',width: '285px',textTransform: 'capitalize'}}>
+                        <Menu style={{ fontFamily: 'Poppins', width: '285px', textTransform: 'capitalize' }}>
                             <h2 id="menu_topic1">Other Pages</h2>
                             <Menu.Item className="hoverEffects">
                                 Cart
@@ -62,7 +63,7 @@ const Navbar = () => {
                                 Order Completed
                             </Menu.Item>
                         </Menu>
-                        <Menu style={{fontFamily: 'Poppins',width: '285px',textTransform: 'capitalize'}}>
+                        <Menu style={{ fontFamily: 'Poppins', width: '285px', textTransform: 'capitalize' }}>
                             <h2 id="menu_topic1">Product Pages</h2>
                             <Menu.Item className="hoverEffects">
                                 Default
@@ -77,7 +78,7 @@ const Navbar = () => {
                                 Thumb Left
                             </Menu.Item>
                         </Menu>
-                        <Menu style={{fontFamily: 'Poppins',width: '285px',textTransform: 'capitalize'}}>
+                        <Menu style={{ fontFamily: 'Poppins', width: '285px', textTransform: 'capitalize' }}>
                             <div className="shop_now">
                                 <img src={banner} alt="banner" />
                                 <div className="shop_info">
@@ -97,8 +98,8 @@ const Navbar = () => {
             <div className="container">
                 <div className="row">
                     <div className="col d-flex">
-                        <Menu style={{fontFamily: 'Poppins',width: '285px',textTransform: 'capitalize'}}>
-                        <h2 id="menu_topic1">Shop Menu Layout</h2>
+                        <Menu style={{ fontFamily: 'Poppins', width: '285px', textTransform: 'capitalize' }}>
+                            <h2 id="menu_topic1">Shop Menu Layout</h2>
                             <Menu.Item className="hoverEffects">
                                 Fashion Home One
                             </Menu.Item>
@@ -112,7 +113,7 @@ const Navbar = () => {
                                 Fashion Home Four
                             </Menu.Item>
                         </Menu>
-                        <Menu style={{fontFamily: 'Poppins',width: '285px',textTransform: 'capitalize'}}>
+                        <Menu style={{ fontFamily: 'Poppins', width: '285px', textTransform: 'capitalize' }}>
                             <h2 id="menu_topic1">Other Pages</h2>
                             <Menu.Item className="hoverEffects">
                                 Cart
@@ -127,7 +128,7 @@ const Navbar = () => {
                                 Order Completed
                             </Menu.Item>
                         </Menu>
-                        <Menu style={{fontFamily: 'Poppins',width: '285px',textTransform: 'capitalize'}}>
+                        <Menu style={{ fontFamily: 'Poppins', width: '285px', textTransform: 'capitalize' }}>
                             <h2 id="menu_topic1">Product Pages</h2>
                             <Menu.Item className="hoverEffects">
                                 Default
@@ -142,7 +143,7 @@ const Navbar = () => {
                                 Thumb Left
                             </Menu.Item>
                         </Menu>
-                        <Menu style={{fontFamily: 'Poppins',width: '285px',textTransform: 'capitalize'}}>
+                        <Menu style={{ fontFamily: 'Poppins', width: '285px', textTransform: 'capitalize' }}>
                             <div className="shop_now">
                                 <img src={banner} alt="banner" />
                                 <div className="shop_info">
@@ -216,7 +217,9 @@ const Navbar = () => {
                     <div className="container">
                         <Row>
                             <Col span={8}>
-                                <img src={logo} alt="logo" style={{ marginLeft: '5px', marginTop: '10px' }} />
+                                <NavLink to="/">
+                                    <img src={logo} alt="logo" style={{ marginLeft: '5px', marginTop: '10px' }} />
+                                </NavLink>
                             </Col>
                             <Col span={16}>
                                 <div className="right_navbar">

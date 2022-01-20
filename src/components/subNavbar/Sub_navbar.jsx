@@ -1,5 +1,6 @@
 import React from "react";
 import { Card, Row, Col } from "antd";
+import {NavLink} from "react-router-dom";
 import "./style.css";
 
 
@@ -27,9 +28,9 @@ const Sub_navbar = () => {
                             </Col>
                             <Col span={12}>
                                 <div className="right_section">
-                                   <p><i className="bi bi-arrow-left-right"></i><a href="#">Compare</a></p> 
-                                   <p><i className="bi bi-heart"></i><a href="#">Wishlist</a></p> 
-                                   <p><i className="bi bi-person"></i><a href="#">Login</a></p> 
+                                   <p><i className="bi bi-arrow-left-right"></i><NavLink to="#">Compare</NavLink></p> 
+                                   <p><i className="bi bi-heart"></i><NavLink to="#">Wishlist</NavLink></p> 
+                                   <p><i className="bi bi-person"></i><NavLink to="login">Login</NavLink></p> 
                                 </div>
                             </Col>
                         </Row>
