@@ -11,6 +11,7 @@ import Login from './components/login/Login';
 import Register from './components/register/Register';
 import Home from './Home';
 import Sub_Footer from './components/subFooter/Sub_Footer';
+import Contact from './components/contact/Contact';
 
 function App() {
   return (
@@ -20,7 +21,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Home></Home>}></Route>
         <Route path="login" element={<Login></Login>}></Route>
-        <Route path="signup" element={<Register></Register>}></Route>
+        <Route path="register" element={<Register></Register>}></Route>
+        <Route path="contact-us" element={<Contact></Contact>}></Route>
       </Routes>
       <Subscription />
       <Footer />

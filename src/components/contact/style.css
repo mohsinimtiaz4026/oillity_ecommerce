@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --color-black: #292B2C;
+    --color-white: #fff;
+    --color-orange: #ff2c4d;
+    --color-green: #388E3C;
+    --color-grey: #687188;
+    --color-lightgrey: #f7f8fb;
+    --color-facebook: #3B5998;
+    --color-twitter: #00ACEE;
+}
+.contact .backLinks{
+    width: 100%;
+    height: 170px;
+    background: var(--color-lightgrey);
+}
+.contact .backLinks p{
+    padding: 70px 5px;
+    font-family: 'Poppins',sans-serif;
+    color: var(--color-black);
+    font-weight: 600;
+    text-transform: capitalize;
+    font-size: 22px;
+}
+.contact .backLinks ul{
+    display: flex;
+    list-style: none;
+    justify-content: flex-end;
+    padding: 70px 5px;
+}
+.contact .backLinks ul li{
+    font-family: 'Poppins',sans-serif;
+}
+.contact .backLinks ul li a{
+    text-decoration: none;
+    color: var(--color-black);
+    font-family: 'Poppins',sans-serif;
+    font-weight: 400;
+    transition: .6s;
+}
+.contact .backLinks ul li a i{
+    font-size: 12px;
+    padding: 0 10px;
+    color: var(--color-black);
+}
+.contact .backLinks ul li a:hover{
+    color: var(--color-orange);
+}
+.contact .contact-info{
+    background-color: var(--color-white);
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+.contact-info .contact-address i{
+    font-size: 28px;
+}
+.contact-info .contact-address{
+    font-family: 'Poppins',sans-serif;
+    padding: 10px 0;
+}
+.contact-info .contact-address h6{
+    font-size: 18px;
+    padding: 10px 0;
+    text-transform: capitalize;
+    padding-top: 10px;
+    font-weight: 600;
+}
+.contact-info .contact-address p{
+    text-transform: lowercase;
+    font-size: 16px;
+}
+.contact-info .contact-email i{
+    font-size: 28px;
+}
+.contact-info .contact-email{
+    font-family: 'Poppins',sans-serif;
+    padding: 10px 0;
+}
+.contact-info .contact-email h6{
+    font-size: 18px;
+    padding: 10px 0;
+    text-transform: capitalize;
+    padding-top: 10px;
+    font-weight: 600;
+}
+.contact-info .contact-email a{
+    text-transform: lowercase;
+    font-size: 16px;
+    text-decoration: none;
+    color: var(--color-black);
+    transition: .6s;
+    padding-top: 10px !important;
+}
+.contact-info .contact-email a:hover{
+    color: var(--color-orange);
+}
+.contact-info .contact-phone i{
+    font-size: 28px;
+}
+.contact-info .contact-phone{
+    padding: 10px 0;
+    font-family: 'Poppins',sans-serif;
+}
+.contact-info .contact-phone h6{
+    font-size: 18px;
+    text-transform: capitalize;
+    padding: 10px 0;
+    font-weight: 600;
+}
+.contact-info .contact-phone p{
+    text-transform: lowercase;
+    font-size: 16px;
+}
+form{
+    margin-bottom: 100px;
+}
+form h2{
+    font-family: 'Poppins',sans-serif;
+    text-transform: capitalize;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 20px 0;
+}
+form .input-control{
+    border: 1px solid var(--color-grey);
+    outline: none;
+    padding: 10px 10px;
+    width: 250px;
+    border-radius: 3px;
+    font-family: 'Poppins',sans-serif;
+    margin-bottom: 20px;
+}
+form .input-control2{
+    border: 1px solid var(--color-grey);
+    outline: none;
+    padding: 10px 10px;
+    width: 100%;
+    border-radius: 3px;
+    font-family: 'Poppins',sans-serif;
+    margin-bottom: 20px;
+}
+form .sendMessage{
+    text-decoration: none;
+    background-color: var(--color-orange);
+    padding: 12px 18px;
+    color: var(--color-white);
+    font-family: 'Poppins',sans-serif;
+    text-transform: capitalize;
+    border-radius: 3px;
+}
+form .sendMessage:hover{
+    color: var(--color-white);
+}

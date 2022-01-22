@@ -249,7 +249,7 @@ const Navbar = () => {
                                                 <a href="#">Blog <i className="bi bi-chevron-down"></i></a>
                                             </li>
                                         </Dropdown>
-                                        <li><a href="#">Contact Us</a></li>
+                                        <li><NavLink to="contact-us">Contact Us</NavLink></li>
                                         <li><a href="#"><i className="bi bi-search"></i></a></li>
                                         <li><a href="#"><i className="bi bi-cart"></i></a></li>
                                     </ul>

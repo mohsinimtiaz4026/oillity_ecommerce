@@ -1,6 +1,5 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import * as mdu from 'mdb-ui-kit';
 import './style.css';
 
 const Login = () => {
@@ -55,7 +54,7 @@ const Login = () => {
                                         <a href='#' id='sec'><i className='bi bi-twitter'/>Twitter</a>
                                     </div>
                                     <div className='signup_section'>
-                                        <p>Don't Have an account? <NavLink to='signup'>Sign Up</NavLink></p>
+                                        <p>Don't Have an account? <NavLink to='register'>Sign Up</NavLink></p>
                                     </div>
                                 </form>
                             </div>
